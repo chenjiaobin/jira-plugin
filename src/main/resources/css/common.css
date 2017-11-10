@@ -1,0 +1,23 @@
+html,body{
+	min-width: 1250px;
+}
+.chen-header{
+	border: none!important;
+	margin: 0!important;
+	border-radius: 0!important;	
+	/*min-width: 1250px;*/
+}
+.project-header{
+	min-width: 1250px;
+}
+.clearFix:after{
+	content: "";
+	display:block;
+	width: 0;
+	height: 0;
+	clear:both;
+	visibility: hidden;
+}
+.clearFix{
+	zoom:1;
+}

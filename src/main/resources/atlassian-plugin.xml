@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+    <param name="plugin-icon">images/pluginIcon.png</param>
+    <param name="plugin-logo">images/pluginLogo.png</param>
+  </plugin-info>
+  <!-- add our i18n resource -->
+  <resource type="i18n" name="i18n" location="ty"/>
+  <!-- add our web resources -->
+  <web-resource key="ty-resources" name="ty Web Resources">
+    <dependency>com.atlassian.auiplugin:ajs</dependency>
+    <resource type="download" name="ty.css" location="/css/ty.css"/>
+    <resource type="download" name="ty.js" location="/js/ty.js"/>
+    <resource type="download" name="common.css" location="/css/common.css"/>
+    <resource type="download" name="index.css" location="/css/index.css"/>
+    <resource type="download" name="public.css" location="/css/public.css"/>
+    <resource type="download" name="sidebar-menu.css" location="/css/sidebar-menu.css"/>
+    <resource type="download" name="index.js" location="/js/index.js"/>
+    <resource type="download" name="sidebar-menu.js" location="/js/sidebar-menu.js"/>
+    <resource type="download" name="blue-label.png" location="/images/icon/blue-label.png"/>
+    <context>ty</context>
+  </web-resource>
+  <servlet name="Issue Status Change" i18n-name-key="issue-status-change.name" key="issue-status-change" class="com.expdatacloud.ty.servlet.IssueStatusChange">
+    <description key="issue-status-change.description">The Issue Status Change Plugin</description>
+    <url-pattern>/issuestatuschange</url-pattern>
+  </servlet>
+  <servlet name="Issue Create" i18n-name-key="issue-create.name" key="issue-create" class="com.expdatacloud.ty.servlet.IssueCreate">
+    <description key="issue-create.description">The Issue Create Plugin</description>
+    <url-pattern>/issuecreate</url-pattern>
+  </servlet>
+  <servlet name="Issue Delete" i18n-name-key="issue-delete.name" key="issue-delete" class="com.expdatacloud.ty.servlet.IssueDelete">
+    <description key="issue-delete.description">The Issue Delete Plugin</description>
+    <url-pattern>/issuedelete</url-pattern>
+  </servlet>
+  <servlet name="Get Issue Field" i18n-name-key="get-issue-field.name" key="get-issue-field" class="com.expdatacloud.ty.servlet.GetIssueField">
+    <description key="get-issue-field.description">The Get Issue Field Plugin</description>
+    <url-pattern>/getissuefield</url-pattern>
+  </servlet>
+  <servlet name="Get All User" i18n-name-key="get-all-user.name" key="get-all-user" class="com.expdatacloud.ty.servlet.GetAllUser">
+    <description key="get-all-user.description">The Get All User Plugin</description>
+    <url-pattern>/getalluser</url-pattern>
+  </servlet>
+  <servlet name="Get Project Issuetypes" i18n-name-key="get-project-issuetypes.name" key="get-project-issuetypes" class="com.expdatacloud.ty.servlet.GetProjectIssuetypes">
+    <description key="get-project-issuetypes.description">The Get Project Issuetypes Plugin</description>
+    <url-pattern>/getprojectissuetypes</url-pattern>
+  </servlet>
+  <servlet name="Get All Labels" i18n-name-key="get-all-labels.name" key="get-all-labels" class="com.expdatacloud.ty.servlet.GetAllLabels">
+    <description key="get-all-labels.description">The Get All Labels Plugin</description>
+    <url-pattern>/getalllabels</url-pattern>
+  </servlet>
+  <servlet name="Get Login User" i18n-name-key="get-login-user.name" key="get-login-user" class="com.expdatacloud.ty.servlet.GetLoginUser">
+    <description key="get-login-user.description">The Get Login User Plugin</description>
+    <url-pattern>/getloginuser</url-pattern>
+  </servlet>
+  <servlet name="Get Agile Kanban" i18n-name-key="get-agile-kanban.name" key="get-agile-kanban" class="com.expdatacloud.ty.servlet.GetAgileKanban">
+    <description key="get-agile-kanban.description">The Get Agile Kanban Plugin</description>
+    <url-pattern>/getagilekanban</url-pattern>
+  </servlet>
+  <servlet name="Get Issue Priority" i18n-name-key="get-issue-priority.name" key="get-issue-priority" class="com.expdatacloud.ty.servlet.GetIssuePriority">
+    <description key="get-issue-priority.description">The Get Issue Priority Plugin</description>
+    <url-pattern>/getissuepriority</url-pattern>
+  </servlet>
+  <servlet name="Get All Projects" i18n-name-key="get-all-projects.name" key="get-all-projects" class="com.expdatacloud.ty.servlet.GetAllProjects">
+    <description key="get-all-projects.description">The Get All Projects Plugin</description>
+    <url-pattern>/getallprojects</url-pattern>
+  </servlet>
+  <servlet name="Get All Issue" i18n-name-key="get-all-issue.name" key="get-all-issue" class="com.expdatacloud.ty.servlet.GetAllIssue">
+    <description key="get-all-issue.description">The Get All Issue Plugin</description>
+    <url-pattern>/getallissue</url-pattern>
+  </servlet>
+  <servlet name="Issue Update" i18n-name-key="issue-update.name" key="issue-update" class="com.expdatacloud.ty.servlet.IssueUpdate">
+    <description key="issue-update.description">The Issue Update Plugin</description>
+    <url-pattern>/issueupdate</url-pattern>
+  </servlet>
+  <webwork1 key="issue-action" name="IssueAction" i18n-name-key="issue-action.name">
+    <description key="issue-action.description">The IssueAction Plugin</description>
+    <actions>
+      <action name="com.expdatacloud.ty.webwork.IssueList" alias="IssueList">
+        <view name="success">/templates/issue-action/issuelist/success.vm</view>
+        <!-- add our web resources -->
+        <view name="issueList">/templates/issue-action/issuelist/issueList.vm</view>
+        <!-- add our web resources -->
+        <view name="issueDetail">/templates/issue-action/issuelist/issueDetail.vm</view>
+      </action>
+    </actions>
+  </webwork1>
+  <servlet name="Project Create" i18n-name-key="project-create.name" key="project-create" class="com.expdatacloud.ty.servlet.ProjectCreate">
+    <description key="project-create.description">The Project Create Plugin</description>
+    <url-pattern>/projectcreate</url-pattern>
+  </servlet>
+  <servlet name="Project Delete" i18n-name-key="project-delete.name" key="project-delete" class="com.expdatacloud.ty.servlet.ProjectDelete">
+    <description key="project-delete.description">The Project Delete Plugin</description>
+    <url-pattern>/projectdelete</url-pattern>
+  </servlet>
+  <servlet name="Project Update" i18n-name-key="project-update.name" key="project-update" class="com.expdatacloud.ty.servlet.ProjectUpdate">
+    <description key="project-update.description">The Project Update Plugin</description>
+    <url-pattern>/projectupdate</url-pattern>
+  </servlet>
+  <servlet name="Sprint Create" i18n-name-key="sprint-create.name" key="sprint-create" class="com.expdatacloud.ty.servlet.SprintCreate">
+    <description key="sprint-create.description">The Sprint Create Plugin</description>
+    <url-pattern>/sprintcreate</url-pattern>
+  </servlet>
+  <servlet name="Project Category Create" i18n-name-key="project-category-create.name" key="project-category-create" class="com.expdatacloud.ty.servlet.ProjectCategoryCreate">
+    <description key="project-category-create.description">The Project Category Create Plugin</description>
+    <url-pattern>/projectcategorycreate</url-pattern>
+  </servlet>
+  <servlet name="Get All Sprints" i18n-name-key="get-all-sprints.name" key="get-all-sprints" class="com.expdatacloud.ty.servlet.GetAllSprints">
+    <description key="get-all-sprints.description">The Get All Sprints Plugin</description>
+    <url-pattern>/getallsprints</url-pattern>
+  </servlet>
+  <servlet name="Get All Epic" i18n-name-key="get-all-epic.name" key="get-all-epic" class="com.expdatacloud.ty.servlet.GetAllEpic">
+    <description key="get-all-epic.description">The Get All Epic Plugin</description>
+    <url-pattern>/getallepic</url-pattern>
+  </servlet>
+  <servlet name="Get Issues For Type" i18n-name-key="get-issues-for-type.name" key="get-issues-for-type" class="com.expdatacloud.ty.servlet.GetIssuesForType">
+    <description key="get-issues-for-type.description">The Get Issues For Type Plugin</description>
+    <url-pattern>/getissuesfortype</url-pattern>
+  </servlet>
+</atlassian-plugin>

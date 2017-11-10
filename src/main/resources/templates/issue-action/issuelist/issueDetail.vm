@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>华为云</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	$webResourceManager.requireResource("com.expdatacloud.tianyuan.ty:ty-resources") 
+</head>
+<body>
+<!-- 页面头部 -->
+<header>
+	<nav class="navbar navbar-default chen-header project-header navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="small-container">
+				<a href="#" class="navbar-brand">天元</a>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">首页</a></li>
+					<li><a href="#">项目</a></li>
+					<li><a href="#">工作项</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">服务<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">代码托管</a></li>
+							<li><a href="#">代码检查</a></li>
+							<li><a href="#">编译构建</a></li>
+							<li><a href="#">测试</a></li>
+							<li><a href="#">部署</a></li>
+							<li><a href="#">发布</a></li>
+							<li><a href="#">流水线</a></li>
+						</ul>
+					</li>
+					<li><a href="#">代码广场</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="user glyphicon glyphicon-user" ></span><span id="loginName"></span><span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">用户中心</a></li>
+							<li><a href="#">退出</a></li>
+						</ul>
+					</li>
+					<li><a href="#">华北区</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">管理控制台<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">统一身份验证</a></li>
+							<li><a href="#">华为云开发</a></li>							
+						</ul>
+					</li>
+					<li><a href="#">帮助中心</a></li>
+					<li><a href="#">关注我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+<!-- 页面主体 -->
+<section class="h50">
+	<div class="container-fluid">
+		<div class="small-container">
+			<div class="content-l">
+				<div class="top text-center  dropdown">				
+						<a class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span><b>Demo</b></a>
+						<ul class="dropdown-menu chen-alert">
+							<li class="chen-input">
+								<input type="text" placeholder="输入名称过滤" class="chen-filter"/>
+							</li>
+							<li class="divider"></li>
+							<li class="chen-input"><a href="#">Demo</a></li>
+							<li class="chen-input"><a href="#">众测项目</a></li>
+						</ul>					
+				</div>
+				<div class="mid">
+					<div class="user-info"><span  class="glyphicon glyphicon-user"></span></div>
+					<div class="user-info">chenjiaobin</div>
+					<div class="user-info">于2017年创建</div>
+				</div>
+				<div class="bottom">
+					<aside class="main-sidebar">
+						<section  class="sidebar">
+							<ul class="sidebar-menu">
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+								</ul>
+							  </li>
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-files-o"></i>
+								  <span>Layout Options</span>
+								  <span class="label label-primary pull-right">4</span>
+								</a>
+								<ul class="treeview-menu" style="display: none;">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Boxed</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Fixed</a></li>
+								  <li class=""><a href="#"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a>
+								  </li>
+								</ul>
+							  </li>
+							  <li>
+								<a href="#">
+								  <i class="fa fa-th"></i> <span>Widgets</span>
+								  <small class="label pull-right label-info">new</small>
+								</a>
+							  </li>
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-pie-chart"></i>
+								  <span>Charts</span>
+								  <i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Morris</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Flot</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+								</ul>
+							  </li>
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-laptop"></i>
+								  <span>UI Elements</span>
+								  <i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> General</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Icons</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Buttons</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Sliders</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Timeline</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Modals</a></li>
+								</ul>
+							  </li>
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-edit"></i> <span>Forms</span>
+								  <i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> General Elements</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Editors</a></li>
+								</ul>
+							  </li>
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-table"></i> <span>Tables</span>
+								  <i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Data tables</a></li>
+								</ul>
+							  </li>
+							  <li>
+								<a href="#">
+								  <i class="fa fa-calendar"></i> <span>Calendar</span>
+								  <small class="label pull-right label-danger">3</small>
+								</a>
+							  </li>
+							  <li>
+								<a href="#">
+								  <i class="fa fa-envelope"></i> <span>Mailbox</span>
+								  <small class="label pull-right label-warning">12</small>
+								</a>
+							  </li>
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-folder"></i> <span>Examples</span>
+								  <i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Invoice</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Profile</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Login</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Register</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+								</ul>
+							  </li>
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-share"></i> <span>Multilevel</span>
+								  <i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+								  <li>
+									<a href="#"><i class="fa fa-circle-o"></i> Level One <i class="fa fa-angle-left pull-right"></i></a>
+									<ul class="treeview-menu">
+									  <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
+									  <li>
+										<a href="#"><i class="fa fa-circle-o"></i> Level Two <i class="fa fa-angle-left pull-right"></i></a>
+										<ul class="treeview-menu">
+										  <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+										  <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+										</ul>
+									  </li>
+									</ul>
+								  </li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+								</ul>
+							  </li>
+							  <li><a href="#"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+							  <li class="header">LABELS</li>
+							  <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+							  <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+							  <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+							</ul>
+						  </section>
+						 </aside>
+				</div>
+			</div>
+			<div class="content-r">
+				<div class="issueDetail" id="issueDetail"></div>
+				<div>
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#all" aria-controls="all" data-toggle="tab">所有</a></li>
+						<li><a href="#remark" aria-controls="remark" data-toggle="tab">备注</a></li>
+						<li><a href="#daily" aria-controls="daily" data-toggle="tab">工作日志</a></li>
+						<li><a href="#change" aria-controls="change" data-toggle="tab">改动记录</a></li>
+						<li><a href="#activity" aria-controls="activity" data-toggle="tab">活动</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="all">没有东西</div>
+						<div class="tab-pane" id="remark">没有备注</div>
+						<div class="tab-pane" id="daily">没有日志</div>
+						<div class="tab-pane" id="change">没有改动过的东西</div>
+						<div class="tab-pane" id="activity">没有活动</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- 底部导航 -->
+<footer>
+	<div class="chen-footer"></div>
+
+</footer>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+sidebarMenu($('.sidebar-menu'));
+window.onload=function(){
+	height();
+	mouseScroll();
+
+	var xmlhttp;
+	var detail="";
+	var issueDetail=document.getElementById("issueDetail");//获取问题详情容器
+
+	function loadInfo(url,fn){
+		if(window.XMLHttpRequest){
+			xmlhttp=new XMLHttpRequest();
+		}else{
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange=fn;
+		xmlhttp.open("GET",url,true);
+		xmlhttp.send(null);
+	}
+	function getIssueDetail(){
+		if(xmlhttp.readyState==4){
+			if(xmlhttp.status==200){
+				console.log(xmlhttp.responseText);
+				var responseText=JSON.parse(xmlhttp.responseText);
+				console.log(responseText);
+				detail+="<h1 class='title'>问题详情#"+responseText[0].issuekey+"</h1>";
+				detail+="<div class='content'>";
+				detail+="<div class='head'>";
+				detail+="<span class='type'><span class='text'>"+responseText[0].issuetype+"</span></span>";
+				detail+="<span class='summary'>"+responseText[0].summary+"</span>";
+				detail+="</div>";
+				detail+="<div class='time'>"+responseText[0].creator+"在"+responseText[0].createtime+"添加,最后更新于"+responseText[0].updatetime+"</div>";
+				detail+="<div class='tag'>";
+				detail+="<span class='name'>标签：</span>";
+				detail+="<span class='info'>什么鬼</span>";
+				detail+="</div>";
+				detail+="<div class='descript'>";
+				detail+="<span class='name'>描述：</span>";
+				detail+="<span class='info'>"+responseText[0].desscription+"</span>";
+				detail+="</div>";
+				detail+="<div class='issueInfo'>";
+				detail+="<ul class='clearFix'>";
+				detail+="<li class='item'><span class='name'>优先级：</span><span class='info'>"+responseText[0].priortiy+"</span></li>";
+				detail+="<li class='item'><span class='name'>项目：</span><span class='info'>"+responseText[0].project+"</span></li>";
+				detail+="<li class='item'><span class='name'>创建人：</span><span class='info'>"+responseText[0].creator+"</span></li>";
+				detail+="<li class='item'><span class='name'>经办人：</span><span class='info'>"+responseText[0].assigner+"</span></li>";
+				detail+="<li class='item'><span class='name'>报告人：</span><span class='info'>"+responseText[0].reportor+"</span></li>"
+				detail+="</ul>";
+				detail+="</div>";
+				detail+="</div>";
+				issueDetail.innerHTML=detail;
+				detail="";
+			}
+		}
+	}
+	function getPara(){
+		var param=window.location.search;
+		var reg=/[?&][^?&]+=[^?&]+/g;
+		var arr=param.match(reg);
+		var obj={};
+		for (var i=0;i<arr.length;i++) {
+			var actual=arr[i].substring(1).split("=");
+			var key=decodeURIComponent(actual[0]);
+			var value=decodeURIComponent(actual[1]);
+			obj[key]=value;
+		}
+		var url="$requestContext.baseUrl/plugins/servlet/getallissue?issuekey="+obj.issuekey;
+		loadInfo(url,getIssueDetail);
+	}
+	getPara();
+	
+}
+
+</script>
+
+</body>
+</html>

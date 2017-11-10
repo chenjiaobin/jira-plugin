@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>鍗庝负浜�</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	$webResourceManager.requireResource("com.expdatacloud.tianyuan.ty:ty-resources") 
+</head>
+<body>
+<!-- 椤甸潰澶撮儴 -->
+<header>
+	<nav class="navbar navbar-default chen-header project-header navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="small-container">
+				<a href="#" class="navbar-brand">澶╁厓</a>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">棣栭〉</a></li>
+					<li><a href="#">椤圭洰</a></li>
+					<li><a href="#">宸ヤ綔椤�</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">鏈嶅姟<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">浠ｇ爜鎵樼</a></li>
+							<li><a href="#">浠ｇ爜妫�鏌�</a></li>
+							<li><a href="#">缂栬瘧鏋勫缓</a></li>
+							<li><a href="#">娴嬭瘯</a></li>
+							<li><a href="#">閮ㄧ讲</a></li>
+							<li><a href="#">鍙戝竷</a></li>
+							<li><a href="#">娴佹按绾�</a></li>
+						</ul>
+					</li>
+					<li><a href="#">浠ｇ爜骞垮満</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="user glyphicon glyphicon-user" ></span><span id="loginName"></span><span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">鐢ㄦ埛涓績</a></li>
+							<li><a href="#">閫�鍑�</a></li>
+						</ul>
+					</li>
+					<li><a href="#">鍗庡寳鍖�</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">绠＄悊鎺у埗鍙�<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">缁熶竴韬唤楠岃瘉</a></li>
+							<li><a href="#">鍗庝负浜戝紑鍙�</a></li>							
+						</ul>
+					</li>
+					<li><a href="#">甯姪涓績</a></li>
+					<li><a href="#">鍏虫敞鎴戜滑</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+<!-- 椤甸潰涓讳綋 -->
+<section class="h50">
+	<div class="container-fluid">
+		<div class="small-container">
+			<div class="content-l">
+				<div class="top text-center  dropdown">				
+						<a class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span><b>Demo</b></a>
+						<ul class="dropdown-menu chen-alert">
+							<li class="chen-input">
+								<input type="text" placeholder="杈撳叆鍚嶇О杩囨护" class="chen-filter"/>
+							</li>
+							<li class="divider"></li>
+							<li class="chen-input"><a href="#">Demo</a></li>
+							<li class="chen-input"><a href="#">浼楁祴椤圭洰</a></li>
+						</ul>					
+				</div>
+				<div class="mid">
+					<div class="user-info"><span  class="glyphicon glyphicon-user"></span></div>
+					<div class="user-info">chenjiaobin</div>
+					<div class="user-info">浜�2017骞村垱寤�</div>
+				</div>
+				<div class="bottom">
+					<aside class="main-sidebar">
+						<section  class="sidebar">
+							<ul class="sidebar-menu">
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+								</ul>
+							  </li>
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-files-o"></i>
+								  <span>Layout Options</span>
+								  <span class="label label-primary pull-right">4</span>
+								</a>
+								<ul class="treeview-menu" style="display: none;">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Boxed</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Fixed</a></li>
+								  <li class=""><a href="#"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a>
+								  </li>
+								</ul>
+							  </li>
+							  <li>
+								<a href="#">
+								  <i class="fa fa-th"></i> <span>Widgets</span>
+								  <small class="label pull-right label-info">new</small>
+								</a>
+							  </li>
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-pie-chart"></i>
+								  <span>Charts</span>
+								  <i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Morris</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Flot</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+								</ul>
+							  </li>
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-laptop"></i>
+								  <span>UI Elements</span>
+								  <i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> General</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Icons</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Buttons</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Sliders</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Timeline</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Modals</a></li>
+								</ul>
+							  </li>
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-edit"></i> <span>Forms</span>
+								  <i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> General Elements</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Editors</a></li>
+								</ul>
+							  </li>
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-table"></i> <span>Tables</span>
+								  <i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Data tables</a></li>
+								</ul>
+							  </li>
+							  <li>
+								<a href="#">
+								  <i class="fa fa-calendar"></i> <span>Calendar</span>
+								  <small class="label pull-right label-danger">3</small>
+								</a>
+							  </li>
+							  <li>
+								<a href="#">
+								  <i class="fa fa-envelope"></i> <span>Mailbox</span>
+								  <small class="label pull-right label-warning">12</small>
+								</a>
+							  </li>
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-folder"></i> <span>Examples</span>
+								  <i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Invoice</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Profile</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Login</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Register</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+								</ul>
+							  </li>
+							  <li class="treeview">
+								<a href="#">
+								  <i class="fa fa-share"></i> <span>Multilevel</span>
+								  <i class="fa fa-angle-left pull-right"></i>
+								</a>
+								<ul class="treeview-menu">
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+								  <li>
+									<a href="#"><i class="fa fa-circle-o"></i> Level One <i class="fa fa-angle-left pull-right"></i></a>
+									<ul class="treeview-menu">
+									  <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
+									  <li>
+										<a href="#"><i class="fa fa-circle-o"></i> Level Two <i class="fa fa-angle-left pull-right"></i></a>
+										<ul class="treeview-menu">
+										  <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+										  <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+										</ul>
+									  </li>
+									</ul>
+								  </li>
+								  <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
+								</ul>
+							  </li>
+							  <li><a href="#"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+							  <li class="header">LABELS</li>
+							  <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+							  <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+							  <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+							</ul>
+						  </section>
+						 </aside>
+				</div>
+			</div>
+			<div class="content-r">
+				<nav class="navbar navbar-default chen-header">
+					<ul class="nav navbar-nav chen-mulFilter">
+						<li id="nav1">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">椤圭洰:鎵�鏈�<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><input type="text" placeholder="鏌ユ壘椤圭洰" class="form-control chen-findProject" /></li>
+								<li>鎵�鏈夐」鐩�</li>
+								<li>
+									<!-- 椤圭洰鍒楄〃 -->
+									<ul class="chen-mulProject" id="projects">
+										
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li id="nav2">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">绫诲瀷:鎵�鏈�<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><input type="text" placeholder="鏌ユ壘闂绫诲瀷" class="form-control chen-findType" /></li>
+								<li><input type="checkbox" id="all-issue"><label for="all-issue">鎵�鏈夋爣鍑嗛棶棰樼被鍨�</label></li>
+								<li><input type="checkbox" id="all-child-issue"><label for="all-child-issu">鎵�鏈夊瓙浠诲姟鐨勯棶棰樼被鍨�</label></li>
+								<li class="divider"></li>
+								<li>鏅�氶棶棰樼被鍨�</li>
+								<li>
+									<ul class="chen-mulProject" id="issueType">
+										
+										
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">鐘舵��:鎵�鏈�<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<li><input type="text" placeholder="鏌ユ壘鐘舵��" class="form-control chen-findType" /></li>
+								</li>
+								<li>
+									<input type="checkbox" id="state1" class="chen-issue" />
+									<label for="state1"><span class="issue-progerssing">杩涜涓�</span></label>
+								</li>
+								<li>
+									<input type="checkbox" id="state2" class="chen-issue" />
+									<label for="state2"><span class="issue-wait">浠ｅ姙</span></label>
+								</li>
+								<li>
+									<input type="checkbox" id="state3" class="chen-issue" />
+									<label for="state3"><span class="issue-finish">瀹屾垚</span></label>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">缁忓姙浜�:鎵�鏈�<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><input type="text" placeholder="鏌ユ壘鐢ㄦ埛/鏌ユ壘鐢ㄦ埛缁�" class="form-control find-user" /></li>
+								<li>
+									<input type="checkbox" id="user1" />
+									<span class="glyphicon glyphicon-headphones user-logo"></span>
+									<label for="user1">褰撳墠鐢ㄦ埛</label>
+								</li>
+								<li>
+									<input type="checkbox" id="user2" />
+									<span class="glyphicon glyphicon-headphones user-logo"></span>
+									<label for="user2">鏈垎閰�</label>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<input type="checkbox" id="user3" />
+									<span class="glyphicon glyphicon-headphones user-logo"></span>
+									<label for="user3">寮犱笁</label>
+								</li>
+								<li>
+									<input type="checkbox" id="user4" />
+									<span class="glyphicon glyphicon-headphones user-logo"></span>
+									<label for="user4">鏉庡洓</label>
+								</li>
+								<li>
+									<input type="checkbox" id="user5" />
+									<span class="glyphicon glyphicon-headphones user-logo"></span>
+									<label for="user5">榛勫北</label>
+								</li>
+							</ul>
+						</li>
+						<li><input type="text" placeholder="璇疯緭鍏ュ唴瀹�" class="chen-moreinfo"></li>
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">鏇村:鎵�鏈�<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><input type="text" placeholder="鏌ユ壘鏇村" class="form-control find-more" /></li>
+								<li>鏈�杩戜娇鐢ㄧ殑鏉′欢</li>
+								<li>
+									<input type="checkbox" id="condition1" />
+									<label for="condition1">鏇存柊鏃ユ湡</label>
+								</li>
+							</ul>
+						</li>
+						<li><span class="glyphicon glyphicon-zoom-in chen-search"></span></li>
+						<li><a href="#">楂樼骇</a></li>
+					</ul>
+					<button type="button" class="btn btn-primary pull-right create-project" id="createBtn" data-toggle="modal" data-target="#createIssue" data-whatever="@mdo">鍒涘缓</button>
+					<div class="modal fade" id="createIssue" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+					  <div class="modal-dialog  modal-lg" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="exampleModalLabel">鍒涘缓闂</h4>
+					      </div>
+					      <div class="modal-body">
+					       <form class="form-horizontal" action="$requestContext.baseUrl/plugins/servlet/issuecreate" method="post">
+						        <div class="issue-form">
+						          <div class="form-group">
+						            <label for="project-item" class="control-label col-md-2">椤圭洰<i class="must-write">*</i></label>
+						            <div class="col-md-5">
+							            <select class="form-control" id="project-item" name="projectId">
+										  <option>娌℃湁椤圭洰</option>
+										</select>
+									</div>
+						          </div>
+						          <div class="form-group">
+						            <label for="issue-type" class="control-label col-md-2">闂绫诲瀷<i class="must-write">*</i></label>
+						            <div class="col-md-5">
+							            <select class="form-control" id="issue-type" name="issueTypeId">
+										  <option>娌℃湁鐩稿叧闂绫诲瀷</option>
+										</select>
+									</div>
+						          </div>
+						          <div class="h1"></div>
+						          <div class="form-group">
+						          	<label for="theme" class="control-label col-md-2">涓婚<i class="must-write">*</i></label>
+						          	<div class="col-md-7">
+						          		<input type="text" id="theme" class="form-control" name="summary" />
+						          	</div>
+						          </div>
+						          <div class="form-group">
+									    <label for="description" class="control-label col-md-2">鎻忚堪</label>
+									    <div class="jira-wikifield col-md-9" field-id="description" renderer-type="atlassian-wiki-renderer" issue-key="" resolved="" >
+										    <div class="wiki-edit">
+										        <div id="description-wiki-edit" class="wiki-edit-content">
+										            <textarea class="textarea long-field wiki-textfield long-field mentionable wiki-editor-initialised" id="description" name="description" rows="12" wrap="virtual" data-projectkey="YFRW" resolved="" style="overflow-y: auto; height: 200px;"></textarea>
+										        	<div class="content-inner"></div>
+										        </div>
+										    </div>
+										        <div class="field-tools">
+											        <dl id="wiki-prefs" class="wiki-js-prefs" style="display:none">
+											            <dt>trigger</dt>
+											            <dd>description-preview_link</dd>
+											            <dt>fieldId</dt>
+											            <dd>description</dd>
+											            <dt>fieldName</dt>
+											            <dd>Description</dd>
+											            <dt>rendererType</dt>
+											            <dd>atlassian-wiki-renderer</dd>
+											            <dt>issueKey</dt>
+											            <dd></dd>
+											        </dl>
+											        <button class="jira-icon-button fullscreen wiki-preview" id="description-preview_link" type="button">
+											            <span class="aui-icon wiki-renderer-icon">Preview description</span>
+											        </button>
+											        <a class="help-lnk" id="viewHelp" href="/jira/secure/WikiRendererHelpAction.jspa?section=texteffects" title="Get local help about wiki markup help" data-helplink="local"><span class="aui-icon aui-icon-small aui-iconfont-help"></span></a>
+											    </div>
+										</div>
+
+									</div>
+									<div class="form-group">
+						            <label for="baogaoren" class="control-label col-md-2">鎶ュ憡浜�</label>
+						            <div class="col-md-5">
+							            <select class="form-control" id="baogaoren" name="reporterId">
+										  <option>娌℃湁鐢ㄦ埛</option>
+										</select>
+									</div>
+						          </div>
+									
+						          <div class="form-group">
+						            <label for="assign" class="control-label col-md-2">缁忓姙浜�</label>
+						            <div class="col-md-5">
+							            <select class="form-control" id="assign" name="assigneeId">
+										  <option>缁忓姙浜�</option>
+										</select>
+									</div>
+						          </div>
+						          <div class="form-group">
+						            <label for="prioritys" class="control-label col-md-2">浼樺厛绾�</label>
+						            <div class="col-md-5">
+							            <select class="form-control" id="prioritys" name="priorityId">
+										  <option>height</option>
+										</select>
+									</div>
+						          </div>
+						         <!--  <div class="form-group">
+						            <label for="" class="control-label col-md-2">闂绫诲瀷<i class="must-write">*</i></label>
+						            <div class="col-md-5">
+							            <div class="circle">
+							            	<label for="file" class="form-control label-dropFile">涓婁紶鏂囦欢</label>
+							            	<input type="file" multiple="" class="form-control dropFile" id="file" placeholder="drop file to attach" />
+							            </div>
+									</div>
+						          </div> -->
+									
+						        </div>
+						        <div class="modal-footer">
+							        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							        <button type="submit" class="btn btn-primary">Send message</button>
+							    </div>
+					        </form>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</nav>
+				<div class="chen-task">
+					<table class="table table-hover">
+						<thead id="allHead">
+							<tr>
+								<th class="hide-icon">绫诲瀷</th>
+								<th class="hide-issuekey">鍏抽敭瀛�</th>
+								<th class="hide-assigner">缁忓姙浜�</th>
+								<th class="hide-status">鐘舵��</th>
+								<th class="hide-createtime">鍒涘缓鏃堕棿</th>
+								<th class="hide-updatetime">鏇存柊鏃堕棿</th>
+								<th class="hide-desscription">鎻忚堪</th>
+								<th class="hide-creator">鍒涘缓浜�</th>
+								<th class="hide-issuetype">闂绫诲瀷</th>
+								<th class="hide-priority">浼樺厛绾�</th>
+								<th class="hide-project">椤圭洰</th>
+								<th class="hide-reportor">鎶ュ憡浜�</th>
+								<th class="hide-summary">涓婚</th>
+								<th class="navbar chen-header" >
+									<a href="#" class="glyphicon glyphicon-asterisk dropdown-toggle" data-toggle="dropdown" id="showField"></a>
+									<form action="#" method="post" class="dropdown-menu dropdown-menu-right">
+										<span class="show-column">鏄剧ず鍒�</span>
+										<div class="divider"></div>
+										<ul class="coluumn-type" id="column">
+											
+										</ul>
+										<div class="divider"></div>
+										<div class="pull-right chen-finishSelect">
+											 <button type="submit" class="btn btn-default">瀹屾垚</button>
+											 <a href="#">鍙栨秷</a>
+										</div>
+									</form>
+								</th>
+							</tr>
+						</thead>
+						<tbody id="allIssueList">
+
+						</tbody>
+					</table>
+				</div>
+				<ul id="pageTotal" class="pagination"></ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- 搴曢儴瀵艰埅 -->
+<footer>
+	<div class="chen-footer"></div>
+
+</footer>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+sidebarMenu($('.sidebar-menu'));
+window.onload=function(){
+	height();
+	mouseScroll();
+	// var footer=document.getElementById("footer");
+	// footer.style.display="none";
+	// Ajax鑾峰彇鍚庡彴鏁版嵁
+	var xmlHttp;
+	var dom="";
+	var project="";
+	var issueList="";
+	var issue="";
+	var priority="";
+	var reporter="";
+	var assign="";
+	var user="";
+	var allIssue="";
+	var column=""
+	var pageErap="";
+	// 鑾峰彇椤圭洰鐩稿叧dom鍏冪礌
+	var projects=document.getElementById("projects");
+	// 鑾峰彇鍒涘缓闂鏃剁殑椤圭洰鐨刣om鍏冪礌
+	var projectItem=document.getElementById("project-item");
+	//鑾峰彇闂绫诲瀷鐨刣om鍏冪礌
+	var issueType=document.getElementById("issueType");
+	var createIssue=document.getElementById("issue-type");//闂绫诲瀷
+	var createPriority=document.getElementById("prioritys");//浼樺厛绾�
+	var createReporter=document.getElementById("baogaoren");//鎶ュ憡浜�
+	var createAssign=document.getElementById("assign");//缁忓姙浜�
+	var allIssueList=document.getElementById("allIssueList");//鍏ㄩ儴闂鐨則body瀹瑰櫒鍏冪礌
+	var columnWrap=document.getElementById("column");//鎵�鏈夊瓧娈靛鍣�
+	var allHead=document.getElementById("allHead");//鑾峰彇闂瀛楁瀹瑰櫒
+	var showField=document.getElementById("showField");
+	var input=document.getElementsByClassName("hh");
+	var loginName=document.getElementById("loginName");//鑾峰彇褰撳墠鐢ㄦ埛
+	var pageTotal=document.getElementById("pageTotal");//鑾峰彇鍒嗛〉瀹瑰櫒
+	var switchs=document.getElementsByClassName("switch");
+	var j=0;
+	var thead="";
+	// 鑾峰彇闂绫诲瀷鐩稿叧dom鍏冪礌
+	function getInfo(fn,URL,way){
+		if(window.XMLHttpRequest){
+			 xmlhttp=new XMLHttpRequest();
+		}else{
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange=fn;
+		xmlhttp.open("GET",URL,way);
+  		xmlhttp.send(null);
+	}
+	getInfo(getIssueType,"$requestContext.baseUrl/plugins/servlet/getprojectissuetypes?projectId=10000",false);	
+	getInfo(getprojects,"$requestContext.baseUrl/plugins/servlet/getallprojects",false);
+	getInfo(getPriority,"$requestContext.baseUrl/plugins/servlet/getissuepriority",false);
+	getInfo(getAllUser,"$requestContext.baseUrl/plugins/servlet/getalluser",false);
+	getInfo(getAllIssueField,"$requestContext.baseUrl/plugins/servlet/getallissue?index=1",false);
+	getInfo(getCurrentUser,"$requestContext.baseUrl/plugins/servlet/getloginuser",false);
+	// 鑾峰彇闂绫诲瀷
+	function getIssueType(){
+		if (xmlhttp.readyState==4){
+			  if (xmlhttp.status==200){
+		var responseText=JSON.parse(xmlhttp.responseText);
+		for(var i=0;i<responseText.length;i++){
+			issueList+="<li>";
+			issueList+="<input type='checkbox' id='type'"+i+"class='chen-Type'/>";
+			issueList+="<span class='glyphicon glyphicon-cloud type-logo'></span>";
+			issueList+="<label for='type'"+i+">"+responseText[i].Name+"</label>";
+			issueList+="<li>";
+			issue+="<option value="+responseText[i].Id+">"+responseText[i].Name+"</option>";
+		}
+		issueType.innerHTML=issueList;
+		createIssue.innerHTML=issue;
+		issueList="";
+		issue="";
+		}
+		}
+	}
+	
+	// 鑾峰彇鎵�鏈夐」鐩�
+	function getprojects(){
+		if (xmlhttp.readyState==4){
+			if (xmlhttp.status==200){
+		var responseText=JSON.parse(xmlhttp.responseText)
+	    	for(var i=0;i<responseText.length;i++){
+				dom+="<li id="+responseText[i].Id+"><input type='checkbox' id=project"+i+" class='chen-project'/>";
+				dom+="<span class='glyphicon glyphicon-cloud project-logo'></span>";
+				dom+="<label for=project"+i+">"+responseText[i].Name+"</label>";
+				project+="<option name="+i+" value="+responseText[i].Id+">"+responseText[i].Name+"</option>";
+			}
+				projects.innerHTML=dom;
+				projectItem.innerHTML=project;
+				dom="";
+				project="";
+			}
+		}
+	}
+	//鑾峰彇鍒涘缓闂鏃惰仈鍔ㄧ殑闂绫诲瀷
+	function getIssueType2(){
+		if (xmlhttp.readyState==4){
+			if (xmlhttp.status==200){
+		var responseText=JSON.parse(xmlhttp.responseText);
+		for(var i=0;i<responseText.length;i++){
+			issue+="<option value="+responseText[i].Id+">"+responseText[i].Name+"</option>";
+		}
+		createIssue.innerHTML=issue;
+		issue="";
+		}
+		}
+	}
+	//鑾峰彇浼樺厛绾�
+	function getPriority(){
+		if (xmlhttp.readyState==4){
+			if (xmlhttp.status==200){
+		var responseText=JSON.parse(xmlhttp.responseText);
+		for(var i=0;i<responseText.length;i++){
+			priority+="<option value="+responseText[i].Id+">"+responseText[i].Name+"</option>";
+		}
+		createPriority.innerHTML=priority;
+		priority="";
+		}
+		}
+	}
+	//鑾峰彇鎵�鏈夌敤鎴�
+	function getAllUser(){
+		if (xmlhttp.readyState==4){
+			if(xmlhttp.status==200){
+				var responseText=JSON.parse(xmlhttp.responseText);
+				for(var i=0;i<responseText.length;i++){
+					user+="<option value="+responseText[i].Key+">"+responseText[i].Name+"</option>";
+				}
+				createReporter.innerHTML=user;
+				createAssign.innerHTML=user;
+				user="";
+			}
+		}
+	}
+		//鑾峰彇鎵�鏈夐棶棰樼殑瀛楁
+	function getAllIssueField(){
+		if (xmlhttp.readyState==4){
+			if(xmlhttp.status==200){
+				var responseText=JSON.parse(xmlhttp.responseText);
+				for(var i=0;i<responseText.length;i++){
+					// var time1=responseText[i].createtime.split(' ');
+					// var time2=responseText[i].updatetime.split(' ');
+					allIssue+="<tr>";
+					allIssue+="<td><span class='glyphicon glyphicon-check chen-task-type'></span></td>";
+					allIssue+="<td  class='hide-issuekey'><p class='issuekey'>"+responseText[i].issuekey+"</p></td>";
+					allIssue+="<td  class='hide-assigner'><p>"+responseText[i].assigner+"</p></td>";
+					allIssue+="<td  class='hide-status'><p>"+responseText[i].status+"</p></td>";
+					allIssue+="<td  class='hide-createtime'><p>"+responseText[i].createtime+"</p></td>";
+					allIssue+="<td  class='hide-updatetime'><p>"+responseText[i].updatetime+"</p></td>";
+					allIssue+="<td  class='hide-desscription'><p>"+responseText[i].desscription+"</p></td>";
+					allIssue+="<td  class='hide-creator'><p>"+responseText[i].creator+"</p></td>";
+					allIssue+="<td  class='hide-issuetype'><p>"+responseText[i].issuetype+"</p></td>";
+					allIssue+="<td  class='hide-priority'><p>"+responseText[i].priortiy+"</p></td>";
+					allIssue+="<td  class='hide-project'><p>"+responseText[i].project+"</p></td>";
+					allIssue+="<td  class='hide-reportor'><p>"+responseText[i].reportor+"</p></td>";
+					allIssue+="<td  class='hide-summary'><p>"+responseText[i].summary+"</p></td>";
+					allIssue+="<td class='navbar chen-header'>";
+					allIssue+="<a href='#'' class='glyphicon glyphicon-option-horizontal dropdown-toggle' data-toggle='dropdown'></a>";
+					allIssue+="<ul class='dropdown-menu dropdown-menu-right'>";
+					allIssue+="<li><a href='#''>鏌ョ湅闂</a></li><li class='divider'></li>";
+					allIssue+="<li><a href='#''>澶勭悊涓�</a></li>";
+					allIssue+="<li><a href='#''>寰呭姙</a></li>";
+					allIssue+="<li><a href='#''>瀹屾垚</a></li>";
+					allIssue+="<li class='divider'></li>";
+					allIssue+="<li><a href='#''>缂栬緫</a></li>";
+					allIssue+="<li><a href='#''>鍒嗛厤</a></li>";
+					allIssue+="<li><a href='#''>鍒嗛厤缁欐垜</a></li>";
+					allIssue+="</ul></td>";
+					allIssue+="</tr>";
+				}
+				for(var j=1;j<=responseText[0].totalpage;j++){
+					pageErap+="<li class='switch'><a href='#'>"+j+"</a></li>";
+				}
+				pageTotal.innerHTML=pageErap;
+				allIssueList.innerHTML=allIssue;
+				allIssue="";
+				pageErap="";
+				for(var z=0;z<switchs.length;z++){
+					switchs[z].onclick=function(z){
+						return function(){
+							var b=z+1;
+							var a="$requestContext.baseUrl/plugins/servlet/getallissue?index="+b;
+							 getInfo(getAllIssueField,a,true);
+						}
+					}(z)
+				}
+				var issuekey=document.getElementsByClassName("issuekey");
+				for(var k=0;k<issuekey.length;k++){
+					issuekey[k].onclick=function(k){
+						return function(){
+						var param=issuekey[k].innerHTML;
+						window.location.href="$requestContext.baseUrl/secure/IssueList!issueDetail.jspa?issuekey="+param;
+						}
+					}(k)
+				}
+			}
+		}
+	}
+	function showAllField(){
+		if(xmlhttp.readyState==4){
+			if(xmlhttp.status==200){
+				var responseText=JSON.parse(xmlhttp.responseText);
+				for(var issueCloumn in responseText[0]){
+					j++;
+						column+="<li><input type='checkbox' class='hh' id=addColumn"+j+" value="+issueCloumn+">"+"<label for=addColumn"+j+">"+issueCloumn+"</label></li>";
+				
+				}
+				columnWrap.innerHTML=column;
+				column="";
+				for(var i=0;i<input.length;i++){
+					input[i].onclick=function(i){
+						return function(){
+							var value=input[i].value;
+							var flag="hide-"+value;
+							var dom=document.getElementsByClassName(flag);
+							if(input[i].checked){
+								for(var p=0;p<dom.length;p++){								
+									dom[p].style.display="block";
+									dom[p].style.verticalAlign="middle";
+								}
+							}else{
+								for(var p=0;p<dom.length;p++){								
+									dom[p].style.display="none";
+								}
+							}
+							
+						}
+					}(i)
+				}
+			}
+		}
+	}
+	function getCurrentUser(){
+		if(xmlhttp.readyState==4){
+			if(xmlhttp.status==200){
+				var responseText=JSON.parse(xmlhttp.responseText);
+				console.log(responseText);
+				var name="Hi "+responseText[0].Username;
+				console.log(name);
+				loginName.innerHTML=name;
+				name="";
+			}
+		}
+	}
+	showField.onclick=function(){
+		getInfo(showAllField,"$requestContext.baseUrl/plugins/servlet/getallissue?index=1",true);
+	}
+
+	projectItem.onchange=function(){ 
+		var num=projectItem.value;
+		var url="$requestContext.baseUrl/plugins/servlet/getprojectissuetypes?projectId="+num;
+		getInfo(getIssueType2,url);
+	}
+	
+}
+
+</script>
+
+</body>
+</html>
